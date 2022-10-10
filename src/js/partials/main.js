@@ -314,7 +314,7 @@ ymaps.ready(init);
 		let _h = window.innerHeight/2;
 		let _mouseX = e.clientX;
 		let _mouseY = e.clientY;
-		let _depth1 = `${50 + (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.03}%`;
+		let _depth1 = `${50 + (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
 		let x = `${_depth1}`;
 		back_img1.style.backgroundPosition = x;
 	}
@@ -329,7 +329,7 @@ ymaps.ready(init);
 		let _h = window.innerHeight/2;
 		let _mouseX = e.clientX;
 		let _mouseY = e.clientY;
-		let _depth1 = `${50 + (_mouseX - _w) * 0.08}% ${50 - (_mouseY - _h) * 0.06}%`;
+		let _depth1 = `${50 + (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
 		let x = `${_depth1}`;
 		back_img2.style.backgroundPosition = x;
 	}
