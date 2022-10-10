@@ -263,7 +263,10 @@
 			right: 4px;
 			bottom: 380px;
 		}
-		>img {
+		>svg {
+			path {
+				transition: all 0.7s ease 0s;
+			}
 			@media (max-width: 768px){
 				width: 112px;
 				height: 112px;
@@ -271,7 +274,11 @@
 		}
 		transition: all 0.3s ease 0s;
 		&:hover{
-			opacity: 0.7;
+			svg {
+				path {
+					stroke:red;
+				}
+			}
 		}
 		&-desc {
 			width: 230px;
