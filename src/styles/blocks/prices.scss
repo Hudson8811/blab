@@ -144,14 +144,14 @@
 					bottom: 0;
 					left: 20px;
 					transform: translate(0, 0%);
-					width: calc(100% + -20px);
+					width: calc(100% + -12px);
 					height: 15px;
 					background: url('../images/prices/show-more-btn.svg') 0 0 / 100% 100% no-repeat;
 				}
 			}
 			&-hide {
 				&::before{
-					transform: translate(0, 0%) rotateX(180deg);
+					transform: translate(0, -100%) rotateX(180deg);
 				}
 			}
 		}
