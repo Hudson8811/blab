@@ -269,7 +269,7 @@ function init() {
 
 	let placemark = new ymaps.Placemark([55.7374190191632,37.663960604850594], {}, {
 		iconLayout: 'default#image',
-		iconImageHref: '../images/contacts/1.svg',
+		iconImageHref: 'https://hudson8811.github.io/blab/public/images/contacts/1.svg',
 		iconImageSize: [100, 100],
 		iconImageOffset: [-50, -45]
 	});
