@@ -79,6 +79,11 @@
 
 					&:first-child {
 						margin: 0;
+						.item-prices__content-top-brd {
+							@media (max-width: 768px){
+								border-radius: 21px 21px 0 0;
+							}
+						}
 					}
 				}
 				.item-prices__content {
@@ -103,6 +108,15 @@
 				@media (max-width: 1200px){
 					.item-prices {
 						margin-top: 39px;
+					}
+				}
+				.item-prices {
+					&:first-child {
+						.item-prices__content-top-brd {
+							@media (max-width: 768px) {
+								border-radius: 0;
+							}
+						}
 					}
 				}
 			}

@@ -98,6 +98,8 @@
 			padding: 30px 80px;
 			position: relative;
 			backdrop-filter: blur(2px);
+						background: linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 0) 101.02%);
+							border-radius: 21px;
 			&::before {
 				content: '';
 				position: absolute;
@@ -290,6 +292,8 @@
 			align-items: center;
 			padding: 14px 12px 14px 30px;
 			backdrop-filter: blur(2px);
+			background: linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 0) 101.02%);
+			border-radius: 21px;
 				&::before {
 					content: '';
 					position: absolute;

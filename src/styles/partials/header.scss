@@ -101,6 +101,9 @@
 			align-items: center;
 			padding: 20px 30px;
 			position: relative;
+			background: linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 0) 101.02%);
+			backdrop-filter: blur(2px);
+				border-radius: 21px;
 			&::before{
 				content:'';
 				position: absolute;
