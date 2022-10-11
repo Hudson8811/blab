@@ -41,13 +41,13 @@
 }
 
 .item-stages {
+	overflow: hidden;
 	display: flex;
 	gap: 20px;
 	@media (max-width: 1200px){
 		align-items: center;
 	}
 	@media (max-width: 768px){
-		overflow: hidden;
 		gap: 0;
 	}
 	&__left {

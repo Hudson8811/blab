@@ -84,10 +84,12 @@
 					}
 				}
 			}
-			&:hover{
-				.header__logo-img {
-					.header__logo-img-top {
-						top: -25px;
+			@media (min-width: 767px){
+				&:hover{
+					.header__logo-img {
+						.header__logo-img-top {
+							top: -25px;
+						}
 					}
 				}
 			}
