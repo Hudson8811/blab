@@ -73,6 +73,7 @@
 				font-size: 30px;
 				line-height: 36px;
 				padding-right: 50px;
+				max-width: 218px;
 			}
 		}
 	
@@ -97,7 +98,7 @@
 			margin-top: 100px;
 			padding: 30px 80px;
 			position: relative;
-			backdrop-filter: blur(2px);
+			backdrop-filter: blur(1px);
 						background: linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 0) 101.02%);
 							border-radius: 21px;
 			&::before {
@@ -114,12 +115,12 @@
 				border-radius: 21px;
 				border: 1px solid transparent;
 				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
-				background:
-						linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
-						linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
+				background: 
+					linear-gradient(158.96deg, rgba(255, 255, 255, 1) -4.1%, rgba(255, 255, 255, 1) 101.02%), 
+					linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
+					opacity: 0.4;
 					background-clip: padding-box, border-box;
 					background-origin: padding-box, border-box;
-					opacity: 0.8;
 				}
 				>* {
 					position: relative;
@@ -258,6 +259,15 @@
 		position: absolute;
 		right: 0;
 		bottom: 60px;
+		@media (max-width: 768px){
+			max-width: 126px;
+			max-height: 126px;
+			min-width: 126px;
+			min-height: 126px;
+		}
+		a {
+			display: block;
+		}
 		@media (max-width: 1260px){
 			bottom: 15px;
 		}
@@ -265,14 +275,19 @@
 			right: 4px;
 			bottom: 380px;
 		}
-		>svg {
+		svg {
+			@media (max-width: 768px) {
+				width: 126px;
+				height: 126px;
+/* 				max-width: 112px;
+				max-height: 112px;
+				min-width: 112px;
+				min-height: 112px; */
+			}
 			path {
 				transition: all 0.7s ease 0s;
 			}
-			@media (max-width: 768px){
-				width: 112px;
-				height: 112px;
-			}
+
 		}
 		transition: all 0.3s ease 0s;
 		&:hover{
@@ -309,11 +324,11 @@
 					border: 1px solid transparent;
 					box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
 					background:
-						linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
-						linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
+						linear-gradient(158.96deg, rgba(255, 255, 255, 1) -4.1%, rgba(255, 255, 255, 1) 101.02%),
+						linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
 					background-clip: padding-box, border-box;
 					background-origin: padding-box, border-box;
-					opacity: 0.8;
+					opacity: 0.4;
 				}
 			
 				>* {
