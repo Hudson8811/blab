@@ -41,7 +41,6 @@
 }
 
 .item-stages {
-	overflow: hidden;
 	display: flex;
 	gap: 20px;
 	@media (max-width: 1200px){
@@ -252,33 +251,32 @@
 		}
 }
 .item-stages1 {
-			border-radius: 21px;
 			>* {
 					position: relative;
 					z-index: 1;
 				}
 			position: relative;
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: 0;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					box-shadow: 0 0 10px #cccccc;
-					filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
-					backdrop-filter: blur(0px);
-					border-radius: 21px;
-					border: 1px solid transparent;
-					box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
-					background:
-						linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
-						linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
-					background-clip: padding-box, border-box;
-					background-origin: padding-box, border-box;
-					opacity: 0.8;
-				}
+						&::before {
+							content: '';
+							position: absolute;
+							z-index: 0;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							box-shadow: 0 0 10px #cccccc;
+							filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
+							backdrop-filter: blur(0px);
+							border-radius: 21px;
+							border: 1px solid transparent;
+							box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+							background:
+								linear-gradient(158.96deg, rgba(255, 255, 255, 1) -4.1%, rgba(255, 255, 255, 1) 101.02%),
+								linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
+							opacity: 0.4;
+							background-clip: padding-box, border-box;
+							background-origin: padding-box, border-box;
+						}
 	padding: 40px;
 	@media (max-width: 1200px){
 		padding: 20px;
@@ -296,27 +294,27 @@
 			
 				position: relative;
 			
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: 0;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					box-shadow: 0 0 10px #cccccc;
-					filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
-					backdrop-filter: blur(0px);
-					border-radius: 21px;
-					border: 1px solid transparent;
-					box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
-					background:
-						linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
-						linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
-					background-clip: padding-box, border-box;
-					background-origin: padding-box, border-box;
-					opacity: 0.8;
-				}
+						&::before {
+							content: '';
+							position: absolute;
+							z-index: 0;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							box-shadow: 0 0 10px #cccccc;
+							filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
+							backdrop-filter: blur(0px);
+							border-radius: 21px;
+							border: 1px solid transparent;
+							box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+							background:
+								linear-gradient(158.96deg, rgba(255, 255, 255, 1) -4.1%, rgba(255, 255, 255, 1) 101.02%),
+								linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
+							opacity: 0.4;
+							background-clip: padding-box, border-box;
+							background-origin: padding-box, border-box;
+						}
 		padding: 25px;
 		order: -1;
 										border-radius: 21px;
@@ -341,27 +339,27 @@
 										border-radius: 21px;
 				position: relative;
 			
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: 0;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					box-shadow: 0 0 10px #cccccc;
-					filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
-					backdrop-filter: blur(0px);
-					border-radius: 21px;
-					border: 1px solid transparent;
-					box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
-					background:
-						linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
-						linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
-					background-clip: padding-box, border-box;
-					background-origin: padding-box, border-box;
-					opacity: 0.8;
-				}
+						&::before {
+							content: '';
+							position: absolute;
+							z-index: 0;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							box-shadow: 0 0 10px #cccccc;
+							filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
+							backdrop-filter: blur(0px);
+							border-radius: 21px;
+							border: 1px solid transparent;
+							box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+							background:
+								linear-gradient(158.96deg, rgba(255, 255, 255, 1) -4.1%, rgba(255, 255, 255, 1) 101.02%),
+								linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
+							opacity: 0.4;
+							background-clip: padding-box, border-box;
+							background-origin: padding-box, border-box;
+						}
 		padding: 25px;
 		@media (max-width: 1200px){
 			padding: 10px;
@@ -376,7 +374,6 @@
 	}
 }
 .item-stages4 {
-			border-radius: 21px;
 			>* {
 					position: relative;
 					z-index: 1;
@@ -384,27 +381,27 @@
 			
 				position: relative;
 			
-				&::before {
-					content: '';
-					position: absolute;
-					z-index: 0;
-					top: 0;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					box-shadow: 0 0 10px #cccccc;
-					filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
-					backdrop-filter: blur(0px);
-					border-radius: 21px;
-					border: 1px solid transparent;
-					box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
-					background:
-						linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 1) 101.02%),
-						linear-gradient(to bottom, rgba($color: #ffffff, $alpha: 1), rgba($color: #7D7D7D, $alpha: 1));
-					background-clip: padding-box, border-box;
-					background-origin: padding-box, border-box;
-					opacity: 0.8;
-				}
+						&::before {
+							content: '';
+							position: absolute;
+							z-index: 0;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							box-shadow: 0 0 10px #cccccc;
+							filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.3));
+							backdrop-filter: blur(0px);
+							border-radius: 21px;
+							border: 1px solid transparent;
+							box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+							background:
+								linear-gradient(158.96deg, rgba(255, 255, 255, 1) -4.1%, rgba(255, 255, 255, 1) 101.02%),
+								linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(125, 125, 125, 1));
+							opacity: 0.4;
+							background-clip: padding-box, border-box;
+							background-origin: padding-box, border-box;
+						}
 	padding: 40px;
 	@media (max-width: 1200px){
 		padding: 20px;
