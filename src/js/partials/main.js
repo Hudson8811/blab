@@ -207,15 +207,7 @@ $(document).ready(function() {
 		$('.prices__items-right').slideUp(300);
 	});
 })
-const prices__img_back = gsap.timeline();
 
-prices__img_back.fromTo('.prices__img-back', 1, {y: '30%'}, {y: '-30%'}, 0)
-
-ScrollTrigger.create({
-	animation: prices__img_back,
-	trigger: '.prices',
-	scrub: 5,
-})
 
 
 //stages
@@ -292,49 +284,6 @@ function init() {
 
 }
 ymaps.ready(init);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(function() {
-	document.addEventListener("mousemove", parallax);
-	const back_img1 = document.querySelector(".first-screen__img-back");
-	function parallax(e) {
-		let _w = window.innerWidth/2;
-		let _h = window.innerHeight/2;
-		let _mouseX = e.clientX;
-		let _mouseY = e.clientY;
-		let _depth1 = `${50 + (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-		let x = `${_depth1}`;
-		back_img1.style.backgroundPosition = x;
-	}
-})();
-
-
-(function() {
-	document.addEventListener("mousemove", parallax1);
-	const back_img2 = document.querySelector(".ask-types__img");
-	function parallax1(e) {
-		let _w = window.innerWidth/2;
-		let _h = window.innerHeight/2;
-		let _mouseX = e.clientX;
-		let _mouseY = e.clientY;
-		let _depth1 = `${50 + (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
-		let x = `${_depth1}`;
-		back_img2.style.backgroundPosition = x;
-	}
-})();
-
 
 
 
