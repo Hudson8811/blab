@@ -1,5 +1,5 @@
 $(document).ready(function (){
-	if ($('.top_animtaion').length > 0){
+	if ($('.mid_animtaion').length > 0){
 		let app = new PIXI.Application({
 			width: innerWidth,
 			height: innerHeight,
@@ -8,6 +8,7 @@ $(document).ready(function (){
 			transparent: true,
 			autoResize: true,
 		});
+
 
 
 		let speed = 10;
@@ -30,8 +31,7 @@ $(document).ready(function (){
 		const texture = PIXI.Texture.from('images/circle1.png');
 		const texture2 = PIXI.Texture.from('images/circle2.png');
 
-		document.querySelector(`.top_animtaion`).appendChild(app.view);
-
+		document.querySelector(`.mid_animtaion`).appendChild(app.view);
 
 		const parent = app.view.parentNode;
 		app.renderer.resize(parent.clientWidth, parent.clientHeight);
@@ -42,13 +42,13 @@ $(document).ready(function (){
 		container.pivot.x = containerWidth / 2;
 		container.pivot.y = containerWidth / 2;
 
-		container.minX = Math.trunc(app.screen.width * 0.5);
-		container.maxX = Math.trunc(app.screen.width * 0.8);
-		container.minY = Math.trunc(app.screen.height * 0.1);
-		container.maxY = Math.trunc(app.screen.height * 0.3);
+		container.minX = Math.trunc(app.screen.width * 0.35);
+		container.maxX = Math.trunc(app.screen.width * 0.5);
+		container.minY = Math.trunc(app.screen.height * 0.35);
+		container.maxY = Math.trunc(app.screen.height * 0.45);
 
-		container.x = app.screen.width * 0.6;
-		container.y = app.screen.height * 0.3;
+		container.x = app.screen.width * 0.45;
+		container.y = app.screen.height * 0.4;
 
 		container.x2 = newMax(container.x, app.screen.width / 2, container.minX, container.maxX);
 		container.y2 = newMax(container.y, app.screen.height / 2, container.minY, container.maxY);
@@ -119,13 +119,13 @@ $(document).ready(function (){
 		container2.pivot.x = containerWidth / 2;
 		container2.pivot.y = containerWidth / 2;
 
-		container2.minX = Math.trunc(app.screen.width * 0.6);
-		container2.maxX = Math.trunc(app.screen.width);
-		container2.minY = Math.trunc(app.screen.height * 0.3);
-		container2.maxY = Math.trunc(app.screen.height * 0.6);
+		container2.minX = Math.trunc(app.screen.width * 0.4);
+		container2.maxX = Math.trunc(app.screen.width * 0.6);
+		container2.minY = Math.trunc(app.screen.height * 0.4);
+		container2.maxY = Math.trunc(app.screen.height * 0.5);
 
-		container2.x = app.screen.width * 0.75;
-		container2.y = app.screen.height * 0.5;
+		container2.x = app.screen.width * 0.5;
+		container2.y = app.screen.height * 0.45;
 
 		container2.x2 = newMax(container2.x, app.screen.width / 2, container2.minX, container2.maxX);
 		container2.y2 = newMax(container2.y, app.screen.height / 2, container2.minY, container2.maxY);

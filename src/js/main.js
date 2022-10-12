@@ -8,3 +8,4 @@
 //= ./libs/pixi.min.js
 //= ./partials/main.js
 //= ./partials/canvas.js
+//= ./partials/canvas2.js

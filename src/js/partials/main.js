@@ -174,6 +174,16 @@ $(document).ready(function() {
 
 
 
+const comment__img_back = gsap.timeline();
+comment__img_back.fromTo('.item-comment__title', 1, {y: '15%'}, {y: '-10%'}, 0)
+ScrollTrigger.create({
+	animation: comment__img_back,
+	trigger: '.comment__swiper',
+	scrub: 5,
+})
+
+
+
 //work
 var swiper = new Swiper(".work__swiper", {
 	slidesPerView: 'auto',
@@ -206,6 +216,14 @@ $(document).ready(function() {
 		$('.prices__show-more-btn.prices__show-more-btn-show').addClass('_active');
 		$('.prices__items-right').slideUp(300);
 	});
+})
+
+const prices__img_back = gsap.timeline();
+prices__img_back.fromTo('.prices__img-back', 1, {y: '30%'}, {y: '-30%'}, 0)
+ScrollTrigger.create({
+	animation: prices__img_back,
+	trigger: '.prices',
+	scrub: 5,
 })
 
 

@@ -28,63 +28,68 @@
 			background: url('../images/help/1-mob.png') 0 0 / 100% 100% no-repeat;
 		}
 	}
-	
-		&__container {
-			position: relative;
+
+	&__container {
+		position: relative;
+	}
+
+	&__title {
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 40px;
+		line-height: 48px;
+		letter-spacing: -0.04em;
+		color: #ECEBEB;
+		max-width: 760px;
+		@media (max-width: 768px){
+			font-size: 19px;
+			line-height: 23px;
 		}
-	
-		&__title {
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 300;
-			font-size: 40px;
-			line-height: 48px;
-			letter-spacing: -0.04em;
-			color: #ECEBEB;
-			max-width: 760px;
-			@media (max-width: 768px){
-				font-size: 19px;
-				line-height: 23px;
-			}
-			@media (max-width: 400px){
-				padding-right: 35px;
-			}
+		@media (max-width: 400px){
+			padding-right: 35px;
 		}
-	
-		&__text {
-			max-width: 760px;
-			margin-top: 30px;
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 18px;
+	}
+
+	&__text {
+		max-width: 760px;
+		margin-top: 30px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;
+		color: #ECEBEB;
+		@media (max-width: 768px){
+			font-size: 14px;
 			line-height: 130%;
-			color: #ECEBEB;
-			@media (max-width: 768px){
-				font-size: 14px;
-				line-height: 130%;
-			}
 		}
-	
-		&__btn {
-			cursor: pointer;
-			margin-top: 55px;
-			background: #1B1B1B;
-			border-radius: 8px;
-			font-family: 'Inter';
-			font-style: normal;
-			font-weight: 400;
-			font-size: 18px;
-			line-height: 22px;
-			color: #ECECEC;
-			padding: 20px 40px;
-			display: inline-block;
-			text-align: center;
-			@media (max-width: 768px){
-				font-size: 14px;
-				line-height: 130%;
-				width: 100%;
-				margin-top: 30px;
-			}
+	}
+
+	&__btn {
+		cursor: pointer;
+		margin-top: 55px;
+		background: #1B1B1B;
+		border-radius: 8px;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 22px;
+		color: #ECECEC;
+		padding: 20px 40px;
+		display: inline-block;
+		text-align: center;
+		transition: background 0.3s ease 0s;
+		@media (max-width: 768px){
+			font-size: 14px;
+			line-height: 130%;
+			width: 100%;
+			margin-top: 30px;
 		}
+
+		&:hover{
+			background: rgba(27, 27, 27, 0.7);
+		}
+	}
 }
