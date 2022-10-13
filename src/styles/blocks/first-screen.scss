@@ -1,50 +1,6 @@
 .first-screen {
 	position: relative;
-	&__img-back {
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		right: 100px;
-		width: 70%;
-		height: 100%;
-		background-image: url(../images/back1.png);
-		background-position: 100% 50%;
-		background-size: 913px 755px;
-		background-repeat: no-repeat;
-		filter: blur(150px);
-		animation: img_back1 15s linear infinite alternate;
-		img {
-			width: 100%;
-			height: 100%;
-		}
-	}
-	@keyframes img_back1 {
-		0% {
-			top: 0px;
-			right: 100px;
-			height: 100%;
-		}
-		25% {
-			top: -200px;
-			right: 300px;
-			height: 150%;
-		}
-		50% {
-			top: -100px;
-			right: 500px;
-			height: 60%;
-		}
-		75% {
-			top: 0;
-			right: 0;
-			height: 100%;
-		}
-		100% {
-			top: 200px;
-			right: 200px;
-			height: 60%;
-		}
-	}
+
 	&__container {
 		padding-top: 130px;
 		position: relative;
@@ -110,7 +66,6 @@
 			right: 0;
 			bottom: 0;
 			box-shadow: 0 0 10px #cccccc;
-			backdrop-filter: blur(0px);
 			border-radius: 21px;
 			border: 1px solid transparent;
 			box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
@@ -305,7 +260,7 @@
 			display: flex;
 			align-items: center;
 			padding: 14px 12px 14px 30px;
-			backdrop-filter: blur(2px);
+			backdrop-filter: blur(1px);
 			background: linear-gradient(158.96deg, rgba(255, 255, 255, 0.7) -4.1%, rgba(255, 255, 255, 0) 101.02%);
 			border-radius: 21px;
 			&::before {
@@ -317,7 +272,6 @@
 				right: 0;
 				bottom: 0;
 				box-shadow: 0 0 10px #cccccc;
-				backdrop-filter: blur(0px);
 				border-radius: 21px;
 				border: 1px solid transparent;
 				box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
