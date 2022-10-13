@@ -279,7 +279,38 @@ Fancybox.bind('[data-fancybox="gallery2"]', {
 	},
 });
 
+//contacts
+function init() {
+	let map = new ymaps.Map('contacts__map', {
+		center: [55.7374190191632,37.663960604850594],
+		zoom: 15,
+	});
 
+	let placemark = new ymaps.Placemark([55.7374190191632,37.663960604850594], {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'https://hudson8811.github.io/blab/public/images/contacts/1.svg',
+		iconImageSize: [100, 100],
+		iconImageOffset: [-50, -45]
+	});
+
+	map.controls.remove('geolocationControl');
+	map.controls.remove('searchControl');
+	map.controls.remove('trafficControl');
+	map.controls.remove('typeSelector');
+	map.controls.remove('fullscreenControl');
+	map.controls.remove('zoomControl');
+	map.controls.remove('rulerControl');
+	map.behaviors.disable(['scrollZoom']);
+
+	map.geoObjects.add(placemark);
+
+	const windowInnerWidth = window.innerWidth
+	if (windowInnerWidth < 769) {
+		map.behaviors.disable('drag');
+	}
+
+}
+ymaps.ready(init);
 
 
 
