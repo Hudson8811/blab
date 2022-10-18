@@ -34,36 +34,39 @@
 			&:nth-child(2){
 				margin-top: 10px;
 			}
-			a {
-				display: inline-block;
+		}
+		a {
+			display: inline-block;
+			font-family: 'Inter';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 130%;
+			letter-spacing: -0.02em;
+			color: #ECECEC;
+			text-decoration: none;
+			position: relative;
+			&.ml5{
 				margin-left: 5px;
-				font-family: 'Inter';
-				font-style: normal;
-				font-weight: 400;
-				font-size: 12px;
-				line-height: 130%;
-				letter-spacing: -0.02em;
-				color: #ECECEC;
-				text-decoration: none;
-				position: relative;
+			}
+			&::before{
+				content:'';
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 1px;
+				background-color: #ffffff;
+				opacity: 0;
+				transition: all 0.3s ease 0s;
+			}
+			&:hover{
 				&::before{
-					content:'';
-					position: absolute;
-					left: 0;
-					right: 0;
-					bottom: 0;
-					height: 1px;
-					background-color: #ffffff;
-					opacity: 0;
-					transition: all 0.3s ease 0s;
-				}
-				&:hover{
-					&::before{
-						opacity: 1;
-					}
+					opacity: 1;
 				}
 			}
 		}
+
 		>* {
 			flex: 0 1 25%;
 			@media (max-width: 1150px){
